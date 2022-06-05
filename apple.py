@@ -31,10 +31,8 @@ def check_if_in_stock(SKU, zipcode):
                 # Print some obnoxiously long string to get my attention.
                 print(
                     f'!!!!!!!!!!!!!!!!!!! BUY NOW AT: {store["storeName"]} !!!!!!!!!!!!!!!!!!!')
+                print(time.ctime())
                 in_stock = True
-        # if it is not currently available for pick up at any store, send the OOS message.
-        if in_stock == False:
-            print('Out of stock at all stores.')
     # if the response was not valid, print the error message.
     else:
         print('error with apple request. please try again.')
